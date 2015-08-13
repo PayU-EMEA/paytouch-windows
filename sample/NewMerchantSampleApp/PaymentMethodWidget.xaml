@@ -1,0 +1,67 @@
+﻿<animation:AnimatedBasePage x:Class="NewMerchantSampleApp.PaymentMethodWidget"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:controls="clr-namespace:PayU.SDK.Controls;assembly=PayU.WP8.SDK"
+                            xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+                            xmlns:animation="clr-namespace:WP7Contrib.View.Transitions.Animation;assembly=WP7Contrib.View.Transitions"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="Portrait"
+                            Orientation="Portrait"
+                            mc:Ignorable="d"
+                            shell:SystemTray.IsVisible="True"
+                            shell:SystemTray.ForegroundColor="Black"
+                            shell:SystemTray.BackgroundColor="White">
+
+    <Grid x:Name="LayoutRoot"
+          Background="White">
+
+        <StackPanel x:Name="ContentPanel"
+                    Margin="24,0,24,0">
+
+            <TextBlock Text="Theme1"
+                       Foreground="Black"/>
+            
+            <controls:PaymentMethodWidget Theme="Theme1"
+                                          Margin="0,0,0,24" />
+
+            <TextBlock Text="Theme2"
+                       Foreground="Black" />
+
+            <controls:PaymentMethodWidget Theme="Theme2"
+                                          Margin="0,0,0,24" />
+
+            <TextBlock Text="Theme3"
+                       Foreground="Black" />
+
+            <controls:PaymentMethodWidget Theme="Theme3"
+                                          Margin="0,0,0,24" />
+
+            <TextBlock Text="Theme4"
+                       Foreground="Black" />
+
+            <controls:PaymentMethodWidget Theme="Theme4"
+                                          Margin="0,0,0,24" />
+
+            <TextBlock Text="Theme5"
+                       Foreground="Black" />
+
+            <controls:PaymentMethodWidget Theme="Theme5"
+                                          Margin="0,0,0,24" />
+
+            <TextBlock Text="Theme6"
+                       Foreground="Black" />
+
+            <controls:PaymentMethodWidget Theme="Theme6"
+                                          Margin="0,0,0,24" />
+
+        </StackPanel>
+
+    </Grid>
+
+</animation:AnimatedBasePage>

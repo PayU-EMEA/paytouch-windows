@@ -1,0 +1,276 @@
+﻿<animation:AnimatedBasePage x:Class="NewMerchantSampleApp.CartPage"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+                            xmlns:controls="clr-namespace:PayU.SDK.Controls;assembly=PayU.WP8.SDK"
+                            xmlns:animation="clr-namespace:WP7Contrib.View.Transitions.Animation;assembly=WP7Contrib.View.Transitions"
+                            xmlns:controls1="clr-namespace:WP7Contrib.View.Controls;assembly=WP7Contrib.View.Controls"
+                            controls1:TiltEffect.IsTiltEnabled="True"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="Portrait"
+                            Orientation="Portrait"
+                            mc:Ignorable="d"
+                            shell:SystemTray.IsVisible="True"
+                            shell:SystemTray.ForegroundColor="Black"
+                            shell:SystemTray.BackgroundColor="White">
+
+    <Grid x:Name="LayoutRoot"
+          Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Margin="12,17,0,28">
+            <TextBlock Text="SKLEP ELEKTRONICZNY"
+                       Foreground="Black"
+                       Style="{StaticResource PhoneTextNormalStyle}" />
+            <TextBlock Text="koszyk"
+                       Margin="9,-7,0,0"
+                       Foreground="Black"
+                       Style="{StaticResource PhoneTextTitle1Style}" />
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel"
+              Grid.Row="1"
+              Margin="24,0,24,0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid x:Name="GridProduct"
+                  Margin="0,0,0,24">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="twoje zakupy"
+                           Foreground="#FF8D8D8D"
+                           FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                           Margin="0,0,0,12" />
+
+                <Grid Grid.Row="1">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image x:Name="ImageProduct"
+                           Margin="0,0,12,0"
+                           Height="100"
+                           Width="100"
+                           Stretch="UniformToFill" />
+
+                    <TextBlock x:Name="TextBlockProductName"
+                               Foreground="Black"
+                               Grid.Column="1"
+                               Margin="0,0,12,0"
+                               TextWrapping="Wrap"
+                               HorizontalAlignment="Left"
+                               FontSize="{StaticResource PhoneFontSizeMedium}"
+                               VerticalAlignment="Top" />
+
+                    <StackPanel Grid.Column="2"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top">
+
+                        <TextBlock x:Name="TextBlockPrice"
+                                   FontWeight="Bold"
+                                   Foreground="Black"
+                                   FontSize="{StaticResource PhoneFontSizeMedium}"
+                                   VerticalAlignment="Center" />
+
+                        <TextBlock Text="PLN"
+                                   FontWeight="Bold"
+                                   Foreground="Black"
+                                   FontSize="{StaticResource PhoneFontSizeMedium}"
+                                   Margin="6,0,0,0"
+                                   VerticalAlignment="Center" />
+
+                    </StackPanel>
+
+                </Grid>
+
+            </Grid>
+
+            <Grid x:Name="GridDelivery"
+                  Grid.Row="1"
+                  Margin="0,0,0,24">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="dostawa"
+                           Foreground="#FF8D8D8D"
+                           FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                           Margin="0,0,0,12" />
+
+                <Grid Grid.Row="1">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Viewbox Width="30"
+                             Height="30"
+                             Margin="0,0,85,0">
+                        <Grid>
+                            <Grid Width="100"
+                                  Height="256"
+                                  Visibility="Collapsed" />
+
+                            <Path Data="M27.875001,33L44.136051,38.615858 60.397001,33 60.397001,58.06378 44.136051,63.762999 27.875001,58.06378 27.875001,57.868479 49.171736,57.868479C49.263248,57.868479 49.354219,57.865396 49.444595,57.859301 49.534969,57.853209 49.624746,57.844107 49.713873,57.832067 49.802999,57.820028 49.891472,57.805056 49.979239,57.787222 50.067005,57.769384 50.154064,57.74869 50.240358,57.725203 50.326654,57.701719 50.412186,57.675447 50.496899,57.64646 50.581612,57.617472 50.665506,57.585772 50.748528,57.551432 50.831547,57.517092 50.913692,57.480112 50.994909,57.440567 51.076124,57.401022 51.15641,57.35891 51.235712,57.314306 51.315012,57.269703 51.393328,57.222609 51.470602,57.173094 51.547874,57.123581 51.624107,57.07165 51.699245,57.017374 51.774382,56.963099 51.848421,56.906481 51.92131,56.847589 51.994198,56.7887 52.065933,56.727541 52.136461,56.664186 52.206989,56.60083 52.27631,56.535278 52.344368,56.467604 52.412424,56.399931 52.479218,56.330133 52.544693,56.258289 52.610168,56.186445 52.674324,56.112553 52.737106,56.036686 52.799889,55.960817 52.861298,55.882977 52.921274,55.803234 52.981253,55.723494 53.039801,55.641851 53.096863,55.558384 53.210989,55.391447 53.319172,55.217205 53.420971,55.036247 53.471869,54.94577 53.52117,54.853613 53.568821,54.759851 53.61647,54.66609 53.662468,54.570724 53.706758,54.473827 53.751049,54.376932 53.793633,54.278505 53.834452,54.178619 53.875271,54.078737 53.914328,53.977396 53.951565,53.874674 53.988802,53.77195 54.024221,53.667845 54.057766,53.562429 54.091309,53.457016 54.12298,53.350292 54.152719,53.242332 54.182461,53.134377 54.21027,53.025183 54.236095,52.914829 54.261921,52.804476 54.285759,52.692961 54.307558,52.580359 54.329357,52.467756 54.349115,52.354069 54.366776,52.239367 54.384438,52.124666 54.400002,52.008951 54.413414,51.892296 54.426826,51.775644 54.438086,51.658051 54.44714,51.539593 54.456192,51.421135 54.463037,51.301813 54.467619,51.181698 54.4722,51.061584 54.47452,50.94068 54.47452,50.819057 54.47452,50.697395 54.4722,50.57645 54.467619,50.456297 54.463037,50.336145 54.456192,50.216785 54.44714,50.098291 54.438086,49.979797 54.426826,49.862169 54.413414,49.745481 54.400002,49.628796 54.384438,49.513048 54.366776,49.398314 54.349115,49.283581 54.329357,49.169861 54.307558,49.05723 54.285759,48.944599 54.261921,48.833055 54.236095,48.722673 54.21027,48.612291 54.182461,48.503073 54.152719,48.395088 54.12298,48.287104 54.091309,48.180355 54.057766,48.074917 54.024221,47.969479 53.988802,47.865349 53.951565,47.762604 53.914328,47.659859 53.875271,47.558496 53.834452,47.458591 53.793633,47.358688 53.751049,47.260242 53.706758,47.163326 53.662468,47.06641 53.61647,46.971027 53.568821,46.877249 53.52117,46.78347 53.471869,46.691296 53.420971,46.600803 53.370071,46.510307 53.317575,46.421494 53.26354,46.334433 53.209503,46.24737 53.153927,46.162062 53.096863,46.078581 53.039801,45.995098 52.981253,45.913445 52.921274,45.833691 52.861298,45.753937 52.799889,45.676085 52.737106,45.600206 52.674324,45.52433 52.610168,45.450428 52.544693,45.378574 52.479218,45.306721 52.412424,45.236916 52.344368,45.169233 52.27631,45.101551 52.206989,45.035992 52.136461,44.972628 52.065933,44.909266 51.994198,44.848099 51.92131,44.789204 51.848421,44.730307 51.774382,44.673681 51.699245,44.619402 51.624107,44.565121 51.547874,44.513186 51.470602,44.463667 51.393328,44.414148 51.315012,44.36705 51.235712,44.322441 51.15641,44.277836 51.076124,44.23572 50.994909,44.196173 50.913692,44.156622 50.831547,44.11964 50.748528,44.085299 50.665506,44.050955 50.581612,44.019253 50.496899,43.990265 50.412186,43.961277 50.326654,43.935003 50.240358,43.911516 50.154064,43.888031 50.067005,43.867332 49.979239,43.849497 49.891472,43.831659 49.802999,43.816685 49.713873,43.804646 49.624746,43.792608 49.534969,43.783504 49.444595,43.777411 49.354219,43.771318 49.263248,43.768234 49.171736,43.768234L27.875001,43.768234z M44.135202,25.47L60.098001,30.82035 44.135202,36.172001 28.259001,30.82035z M10.811653,23.456L10.93145,23.456C16.903313,23.455999,21.743001,28.298363,21.743001,34.268419L21.743001,46.177002 47.085077,46.177002C49.649492,46.177002 51.729002,48.255123 51.729002,50.81905 51.729002,53.381578 49.649492,55.461 47.085077,55.461L21.743001,55.461 21.743001,63.999998 0,63.999998 0,34.268419C0,28.298363,4.8404388,23.455999,10.811653,23.456z M11.115519,0C16.985253,0 21.743001,4.7589169 21.743001,10.629849 21.743001,16.496911 16.985253,21.255999 11.115519,21.255999 5.2458229,21.255999 0.48800087,16.496911 0.48800087,10.629849 0.48800087,4.7589169 5.2458229,0 11.115519,0z"
+                                  Stretch="Uniform"
+                                  Fill="Black"
+                                  Width="100"
+                                  Height="100"
+                                  Margin="0,0,0,0"
+                                  RenderTransformOrigin="0.5,0.5">
+                                <Path.RenderTransform>
+                                    <TransformGroup>
+                                        <TransformGroup.Children>
+                                            <RotateTransform Angle="0" />
+                                            <ScaleTransform ScaleX="1"
+                                                            ScaleY="1" />
+                                        </TransformGroup.Children>
+                                    </TransformGroup>
+                                </Path.RenderTransform>
+                            </Path>
+                        </Grid>
+                    </Viewbox>
+
+                    <TextBlock Text="odbiór osobisty"
+                               Grid.Column="1"
+                               Foreground="Black"
+                               Margin="0,0,12,0"
+                               TextWrapping="Wrap"
+                               HorizontalAlignment="Left"
+                               FontSize="{StaticResource PhoneFontSizeMedium}"
+                               VerticalAlignment="Top" />
+
+                    <StackPanel Grid.Column="2"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top">
+
+                        <TextBlock Text="0"
+                                   FontWeight="Bold"
+                                   Foreground="Black"
+                                   FontSize="{StaticResource PhoneFontSizeMedium}"
+                                   VerticalAlignment="Center" />
+
+                        <TextBlock Text="PLN"
+                                   FontWeight="Bold"
+                                   Foreground="Black"
+                                   FontSize="{StaticResource PhoneFontSizeMedium}"
+                                   Margin="6,0,0,0"
+                                   VerticalAlignment="Center" />
+
+                    </StackPanel>
+
+                </Grid>
+
+            </Grid>
+
+            <Grid x:Name="GridTotalPrive"
+                  Margin="0,0,0,24"
+                  Grid.Row="2">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="do zapłaty"
+                           Foreground="#FF8D8D8D"
+                           FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                           Margin="0,0,0,12" />
+
+                <StackPanel Grid.Row="1"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Top">
+
+                    <TextBlock x:Name="TextBlockTotalPrice"
+                               Foreground="Black"
+                               FontWeight="Bold"
+                               FontSize="{StaticResource PhoneFontSizeMedium}"
+                               VerticalAlignment="Center" />
+
+                    <TextBlock Text="PLN"
+                               FontWeight="Bold"
+                               Foreground="Black"
+                               FontSize="{StaticResource PhoneFontSizeMedium}"
+                               Margin="6,0,0,0"
+                               VerticalAlignment="Center" />
+
+                </StackPanel>
+
+            </Grid>
+
+            <TextBlock Text="sposób zapłaty"
+                       Grid.Row="3"
+                       FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                       Margin="0,0,0,12"
+                       Foreground="#FF8D8D8D" />
+
+            <controls:PaymentMethodWidget Grid.Row="4"
+                                          VerticalAlignment="Top"
+                                          Theme="Theme2" />
+
+            <Button x:Name="ButtonPay"
+                    Content="płacę"
+                    Foreground="Black"
+                    BorderBrush="Black"
+                    IsEnabled="False"
+                    Margin="-12,0,-12,12"
+                    VerticalAlignment="Bottom"
+                    Grid.Row="4"
+                    Click="ButtonBase_OnClick"
+                    Style="{StaticResource ButtonStyle1}" />
+
+        </Grid>
+
+        <Grid x:Name="Overlay"
+              Grid.RowSpan="2"
+              Background="Black"
+              Opacity="0.7"
+              Visibility="Collapsed">
+
+            <TextBlock Foreground="White"
+                       Text="Realizacja płatności..."
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                       Margin="0,0,0,48" />
+
+            <ProgressBar IsIndeterminate="True"
+                         VerticalAlignment="Center" />
+
+        </Grid>
+
+    </Grid>
+
+</animation:AnimatedBasePage>

@@ -1,0 +1,142 @@
+﻿<animation:AnimatedBasePage x:Class="NewMerchantSampleApp.MainPage"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:animation="clr-namespace:WP7Contrib.View.Transitions.Animation;assembly=WP7Contrib.View.Transitions"
+                            xmlns:controls="clr-namespace:WP7Contrib.View.Controls;assembly=WP7Contrib.View.Controls"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="Portrait"
+                            Orientation="Portrait"
+                            mc:Ignorable="d"
+                            shell:SystemTray.IsVisible="True"
+                            shell:SystemTray.ForegroundColor="Black"
+                            shell:SystemTray.BackgroundColor="White">
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar Mode="Minimized"
+                              ForegroundColor="White"
+                              BackgroundColor="DimGray">
+            <shell:ApplicationBar.MenuItems>
+
+                <shell:ApplicationBarMenuItem IsEnabled="True"
+                                              Text="widget"
+                                              Click="ApplicationBarMenuItemWidget_OnClick" />
+
+                <shell:ApplicationBarMenuItem IsEnabled="True"
+                                              Text="ustawienia"
+                                              Click="ApplicationBarMenuItemSettings_OnClick" />
+
+                <shell:ApplicationBarMenuItem IsEnabled="True"
+                                              Text="wyloguj się"
+                                              Click="ApplicationBarMenuItemLogOut_OnClick" />
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <Grid x:Name="LayoutRoot"
+          Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Margin="12,17,0,28">
+            <TextBlock Text="SKLEP ELEKTRONICZNY"
+                       Foreground="Black"
+                       Style="{StaticResource PhoneTextNormalStyle}" />
+            <TextBlock Text="produkty"
+                       Margin="9,-7,0,0"
+                       Foreground="Black"
+                       Style="{StaticResource PhoneTextTitle1Style}" />
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel"
+              Grid.Row="1"
+              Margin="12,0,0,0">
+
+            <phone:LongListSelector x:Name="LongListSelectorProducts"
+                                    Margin="12,0,0,0"
+                                    HorizontalContentAlignment="Stretch">
+                <phone:LongListSelector.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,0,24,24">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Image Margin="0,0,12,0"
+                                   Height="150"
+                                   Width="150"
+                                   Source="{Binding ImageUrl}"
+                                   Stretch="UniformToFill" />
+
+                            <Grid Grid.Column="1">
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding Name}"
+                                           Grid.ColumnSpan="2"
+                                           TextWrapping="Wrap"
+                                           Foreground="Black"
+                                           FontSize="{StaticResource PhoneFontSizeMediumLarge}" />
+
+                                <StackPanel Grid.Row="2"
+                                            Orientation="Horizontal">
+
+                                    <TextBlock Text="{Binding Price}"
+                                               Foreground="Black"
+                                               FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                                               VerticalAlignment="Center" />
+
+                                    <TextBlock Text="PLN"
+                                               Foreground="Black"
+                                               FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                                               Margin="6,0,0,0"
+                                               VerticalAlignment="Center" />
+
+                                </StackPanel>
+
+                                <Button x:Name="ButtonBuyNow"
+                                        Click="ButtonBuyNow_OnClick"
+                                        Content="kup teraz"
+                                        Tag="{Binding}"
+                                        Grid.Row="2"
+                                        Grid.Column="1"
+                                        Foreground="Black"
+                                        BorderBrush="Black"
+                                        Margin="-12,-12,-12,-12"
+                                        controls:TiltEffect.IsTiltEnabled="True"
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Bottom" />
+
+                            </Grid>
+
+                        </Grid>
+
+                    </DataTemplate>
+                </phone:LongListSelector.ItemTemplate>
+            </phone:LongListSelector>
+
+        </Grid>
+
+    </Grid>
+
+</animation:AnimatedBasePage>
