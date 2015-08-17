@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="c6d03bbf-432a-4aed-b9b2-3775ed874129" Title="PayU" Url="html/R_Project_Documentation.htm">
+    <HelpTOCNode Id="68c32e67-6942-46d7-8bcd-64e722f420e9" Title="PayU.SDK" Url="html/N_PayU_SDK.htm">
+      <HelpTOCNode Id="30fcecf4-446b-4f55-b5da-db4e813177ed" Title="IMerchantAccessTokenProvider Interface" Url="html/T_PayU_SDK_IMerchantAccessTokenProvider.htm">
+        <HelpTOCNode Id="f075cdd8-89e0-4613-9cce-0ba532ca17e1" Title="IMerchantAccessTokenProvider Methods" Url="html/Methods_T_PayU_SDK_IMerchantAccessTokenProvider.htm">
+          <HelpTOCNode Title="GetAccessTokenAsync Method " Url="html/M_PayU_SDK_IMerchantAccessTokenProvider_GetAccessTokenAsync.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="f3975b13-bd8e-4a15-b625-48d8f223cf80" Title="PayUService Class" Url="html/T_PayU_SDK_PayUService.htm">
+        <HelpTOCNode Id="30def47e-30f1-4cd8-9e41-adc1b39fb7f6" Title="PayUService Methods" Url="html/Methods_T_PayU_SDK_PayUService.htm">
+          <HelpTOCNode Title="HandleAssociationUri Method " Url="html/M_PayU_SDK_PayUService_HandleAssociationUri.htm" />
+          <HelpTOCNode Title="Initialize Method " Url="html/M_PayU_SDK_PayUService_Initialize.htm" />
+          <HelpTOCNode Title="LogOutUser Method " Url="html/M_PayU_SDK_PayUService_LogOutUser.htm" />
+          <HelpTOCNode Title="NavigateToPaymentMethodChooser Method " Url="html/M_PayU_SDK_PayUService_NavigateToPaymentMethodChooser.htm" />
+          <HelpTOCNode Title="SendOrderAsync Method " Url="html/M_PayU_SDK_PayUService_SendOrderAsync.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="ef31baf1-6377-445b-bf3d-01323d5df028" Title="PayUService Properties" Url="html/Properties_T_PayU_SDK_PayUService.htm">
+          <HelpTOCNode Title="Instance Property " Url="html/P_PayU_SDK_PayUService_Instance.htm" />
+          <HelpTOCNode Title="IsPaymentMethodSelected Property " Url="html/P_PayU_SDK_PayUService_IsPaymentMethodSelected.htm" />
+          <HelpTOCNode Title="MerchantAccessTokenProvider Property " Url="html/P_PayU_SDK_PayUService_MerchantAccessTokenProvider.htm" />
+          <HelpTOCNode Title="MerchantAppProtocol Property " Url="html/P_PayU_SDK_PayUService_MerchantAppProtocol.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="bad5df52-2b09-4cd1-a78b-e60b92bda9b1" Title="PayUService Events" Url="html/Events_T_PayU_SDK_PayUService.htm">
+          <HelpTOCNode Title="PaymentMethodChanged Event" Url="html/E_PayU_SDK_PayUService_PaymentMethodChanged.htm" />
+          <HelpTOCNode Title="SendOrderCompleted Event" Url="html/E_PayU_SDK_PayUService_SendOrderCompleted.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="SendOrderStatus Enumeration" Url="html/T_PayU_SDK_SendOrderStatus.htm" />
+      <HelpTOCNode Id="0ba2eb0f-fb47-4ca5-9491-8cc3aed126a5" Title="ServiceResponse(T) Class" Url="html/T_PayU_SDK_ServiceResponse_1.htm">
+        <HelpTOCNode Id="00346cc5-9e7c-4115-87c2-b1e62584d4ea" Title="ServiceResponse(T) Properties" Url="html/Properties_T_PayU_SDK_ServiceResponse_1.htm">
+          <HelpTOCNode Title="Exception Property " Url="html/P_PayU_SDK_ServiceResponse_1_Exception.htm" />
+          <HelpTOCNode Title="IsOk Property " Url="html/P_PayU_SDK_ServiceResponse_1_IsOk.htm" />
+          <HelpTOCNode Title="Result Property " Url="html/P_PayU_SDK_ServiceResponse_1_Result.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="35baf27d-ea96-4bca-a245-1621f8ffc3e9" Title="PayU.SDK.Exceptions" Url="html/N_PayU_SDK_Exceptions.htm">
+      <HelpTOCNode Title="MerchantAccessTokenProviderNotSetException Class" Url="html/T_PayU_SDK_Exceptions_MerchantAccessTokenProviderNotSetException.htm" />
+      <HelpTOCNode Title="PaymentMethodNotSelectedException Class" Url="html/T_PayU_SDK_Exceptions_PaymentMethodNotSelectedException.htm" />
+      <HelpTOCNode Title="ProtocolNotSetException Class" Url="html/T_PayU_SDK_Exceptions_ProtocolNotSetException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="00a02883-d5d7-4edc-915b-4969ee58dc0d" Title="PayU.SDK.Model" Url="html/N_PayU_SDK_Model.htm">
+      <HelpTOCNode Id="a7957dd4-d2b5-4790-80e6-844185f9098d" Title="AccessToken Class" Url="html/T_PayU_SDK_Model_AccessToken.htm">
+        <HelpTOCNode Id="6e86d00b-c7cc-4f7c-a054-811e3fc4d9b6" Title="AccessToken Properties" Url="html/Properties_T_PayU_SDK_Model_AccessToken.htm">
+          <HelpTOCNode Title="TokenString Property " Url="html/P_PayU_SDK_Model_AccessToken_TokenString.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="Currency Enumeration" Url="html/T_PayU_SDK_Model_Currency.htm" />
+      <HelpTOCNode Title="PaymentMethodType Enumeration" Url="html/T_PayU_SDK_Model_PaymentMethodType.htm" />
+      <HelpTOCNode Id="278e6688-ea60-4e56-8916-bf28db74d8e5" Title="SecureString Class" Url="html/T_PayU_SDK_Model_SecureString.htm">
+        <HelpTOCNode Id="737083a4-fac9-4503-852d-9dbd0cefc8ff" Title="SecureString Properties" Url="html/Properties_T_PayU_SDK_Model_SecureString.htm">
+          <HelpTOCNode Title="Value Property " Url="html/P_PayU_SDK_Model_SecureString_Value.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

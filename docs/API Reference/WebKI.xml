@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AccessToken class">
+    <HelpKINode Title="AccessToken Class" Url="html/T_PayU_SDK_Model_AccessToken.htm" />
+    <HelpKINode Title="about AccessToken class" Url="html/T_PayU_SDK_Model_AccessToken.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PayU_SDK_Model_AccessToken.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AccessToken.TokenString property" Url="html/P_PayU_SDK_Model_AccessToken_TokenString.htm" />
+  <HelpKINode Title="BankAccount enumeration member" Url="html/T_PayU_SDK_Model_PaymentMethodType.htm" />
+  <HelpKINode Title="Canceled enumeration member" Url="html/T_PayU_SDK_SendOrderStatus.htm" />
+  <HelpKINode Title="CreditCard enumeration member" Url="html/T_PayU_SDK_Model_PaymentMethodType.htm" />
+  <HelpKINode Title="Currency enumeration" Url="html/T_PayU_SDK_Model_Currency.htm" />
+  <HelpKINode Title="Exception property" Url="html/P_PayU_SDK_ServiceResponse_1_Exception.htm" />
+  <HelpKINode Title="Failure enumeration member" Url="html/T_PayU_SDK_SendOrderStatus.htm" />
+  <HelpKINode Title="GetAccessTokenAsync method" Url="html/M_PayU_SDK_IMerchantAccessTokenProvider_GetAccessTokenAsync.htm" />
+  <HelpKINode Title="HandleAssociationUri method" Url="html/M_PayU_SDK_PayUService_HandleAssociationUri.htm" />
+  <HelpKINode Title="IMerchantAccessTokenProvider interface">
+    <HelpKINode Title="IMerchantAccessTokenProvider Interface" Url="html/T_PayU_SDK_IMerchantAccessTokenProvider.htm" />
+    <HelpKINode Title="about IMerchantAccessTokenProvider interface" Url="html/T_PayU_SDK_IMerchantAccessTokenProvider.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PayU_SDK_IMerchantAccessTokenProvider.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMerchantAccessTokenProvider.GetAccessTokenAsync method" Url="html/M_PayU_SDK_IMerchantAccessTokenProvider_GetAccessTokenAsync.htm" />
+  <HelpKINode Title="Initialize method" Url="html/M_PayU_SDK_PayUService_Initialize.htm" />
+  <HelpKINode Title="Instance property" Url="html/P_PayU_SDK_PayUService_Instance.htm" />
+  <HelpKINode Title="IsOk property" Url="html/P_PayU_SDK_ServiceResponse_1_IsOk.htm" />
+  <HelpKINode Title="IsPaymentMethodSelected property" Url="html/P_PayU_SDK_PayUService_IsPaymentMethodSelected.htm" />
+  <HelpKINode Title="LogOutUser method" Url="html/M_PayU_SDK_PayUService_LogOutUser.htm" />
+  <HelpKINode Title="MerchantAccessTokenProvider property" Url="html/P_PayU_SDK_PayUService_MerchantAccessTokenProvider.htm" />
+  <HelpKINode Title="MerchantAccessTokenProviderNotSetException class">
+    <HelpKINode Title="MerchantAccessTokenProviderNotSetException Class" Url="html/T_PayU_SDK_Exceptions_MerchantAccessTokenProviderNotSetException.htm" />
+    <HelpKINode Title="about MerchantAccessTokenProviderNotSetException class" Url="html/T_PayU_SDK_Exceptions_MerchantAccessTokenProviderNotSetException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MerchantAppProtocol property" Url="html/P_PayU_SDK_PayUService_MerchantAppProtocol.htm" />
+  <HelpKINode Title="NavigateToPaymentMethodChooser method" Url="html/M_PayU_SDK_PayUService_NavigateToPaymentMethodChooser.htm" />
+  <HelpKINode Title="PayByLink enumeration member" Url="html/T_PayU_SDK_Model_PaymentMethodType.htm" />
+  <HelpKINode Title="PaymentMethodChange enumeration member" Url="html/T_PayU_SDK_SendOrderStatus.htm" />
+  <HelpKINode Title="PaymentMethodChanged event" Url="html/E_PayU_SDK_PayUService_PaymentMethodChanged.htm" />
+  <HelpKINode Title="PaymentMethodNotSelectedException class">
+    <HelpKINode Title="PaymentMethodNotSelectedException Class" Url="html/T_PayU_SDK_Exceptions_PaymentMethodNotSelectedException.htm" />
+    <HelpKINode Title="about PaymentMethodNotSelectedException class" Url="html/T_PayU_SDK_Exceptions_PaymentMethodNotSelectedException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PaymentMethodType enumeration" Url="html/T_PayU_SDK_Model_PaymentMethodType.htm" />
+  <HelpKINode Title="PayU.SDK namespace" Url="html/N_PayU_SDK.htm" />
+  <HelpKINode Title="PayU.SDK.Exceptions namespace" Url="html/N_PayU_SDK_Exceptions.htm" />
+  <HelpKINode Title="PayU.SDK.Exceptions.MerchantAccessTokenProviderNotSetException class" Url="html/T_PayU_SDK_Exceptions_MerchantAccessTokenProviderNotSetException.htm" />
+  <HelpKINode Title="PayU.SDK.Exceptions.PaymentMethodNotSelectedException class" Url="html/T_PayU_SDK_Exceptions_PaymentMethodNotSelectedException.htm" />
+  <HelpKINode Title="PayU.SDK.Exceptions.ProtocolNotSetException class" Url="html/T_PayU_SDK_Exceptions_ProtocolNotSetException.htm" />
+  <HelpKINode Title="PayU.SDK.IMerchantAccessTokenProvider interface" Url="html/T_PayU_SDK_IMerchantAccessTokenProvider.htm" />
+  <HelpKINode Title="PayU.SDK.Model namespace" Url="html/N_PayU_SDK_Model.htm" />
+  <HelpKINode Title="PayU.SDK.Model.AccessToken class" Url="html/T_PayU_SDK_Model_AccessToken.htm" />
+  <HelpKINode Title="PayU.SDK.Model.Currency enumeration" Url="html/T_PayU_SDK_Model_Currency.htm" />
+  <HelpKINode Title="PayU.SDK.Model.PaymentMethodType enumeration" Url="html/T_PayU_SDK_Model_PaymentMethodType.htm" />
+  <HelpKINode Title="PayU.SDK.Model.SecureString class" Url="html/T_PayU_SDK_Model_SecureString.htm" />
+  <HelpKINode Title="PayU.SDK.PayUService class" Url="html/T_PayU_SDK_PayUService.htm" />
+  <HelpKINode Title="PayU.SDK.SendOrderStatus enumeration" Url="html/T_PayU_SDK_SendOrderStatus.htm" />
+  <HelpKINode Title="PayU.SDK.ServiceResponse(Of T) class" Url="html/T_PayU_SDK_ServiceResponse_1.htm" />
+  <HelpKINode Title="PayU.SDK.ServiceResponse&lt;T&gt; class" Url="html/T_PayU_SDK_ServiceResponse_1.htm" />
+  <HelpKINode Title="PayUService class">
+    <HelpKINode Title="PayUService Class" Url="html/T_PayU_SDK_PayUService.htm" />
+    <HelpKINode Title="about PayUService class" Url="html/T_PayU_SDK_PayUService.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_PayU_SDK_PayUService.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PayU_SDK_PayUService.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PayU_SDK_PayUService.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PayUService.HandleAssociationUri method" Url="html/M_PayU_SDK_PayUService_HandleAssociationUri.htm" />
+  <HelpKINode Title="PayUService.Initialize method" Url="html/M_PayU_SDK_PayUService_Initialize.htm" />
+  <HelpKINode Title="PayUService.Instance property" Url="html/P_PayU_SDK_PayUService_Instance.htm" />
+  <HelpKINode Title="PayUService.IsPaymentMethodSelected property" Url="html/P_PayU_SDK_PayUService_IsPaymentMethodSelected.htm" />
+  <HelpKINode Title="PayUService.LogOutUser method" Url="html/M_PayU_SDK_PayUService_LogOutUser.htm" />
+  <HelpKINode Title="PayUService.MerchantAccessTokenProvider property" Url="html/P_PayU_SDK_PayUService_MerchantAccessTokenProvider.htm" />
+  <HelpKINode Title="PayUService.MerchantAppProtocol property" Url="html/P_PayU_SDK_PayUService_MerchantAppProtocol.htm" />
+  <HelpKINode Title="PayUService.NavigateToPaymentMethodChooser method" Url="html/M_PayU_SDK_PayUService_NavigateToPaymentMethodChooser.htm" />
+  <HelpKINode Title="PayUService.PaymentMethodChanged event" Url="html/E_PayU_SDK_PayUService_PaymentMethodChanged.htm" />
+  <HelpKINode Title="PayUService.SendOrderAsync method" Url="html/M_PayU_SDK_PayUService_SendOrderAsync.htm" />
+  <HelpKINode Title="PayUService.SendOrderCompleted event" Url="html/E_PayU_SDK_PayUService_SendOrderCompleted.htm" />
+  <HelpKINode Title="PLN enumeration member" Url="html/T_PayU_SDK_Model_Currency.htm" />
+  <HelpKINode Title="ProtocolNotSetException class">
+    <HelpKINode Title="ProtocolNotSetException Class" Url="html/T_PayU_SDK_Exceptions_ProtocolNotSetException.htm" />
+    <HelpKINode Title="about ProtocolNotSetException class" Url="html/T_PayU_SDK_Exceptions_ProtocolNotSetException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Result property" Url="html/P_PayU_SDK_ServiceResponse_1_Result.htm" />
+  <HelpKINode Title="SecureString class">
+    <HelpKINode Title="SecureString Class" Url="html/T_PayU_SDK_Model_SecureString.htm" />
+    <HelpKINode Title="about SecureString class" Url="html/T_PayU_SDK_Model_SecureString.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PayU_SDK_Model_SecureString.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecureString.Value property" Url="html/P_PayU_SDK_Model_SecureString_Value.htm" />
+  <HelpKINode Title="SendOrderAsync method" Url="html/M_PayU_SDK_PayUService_SendOrderAsync.htm" />
+  <HelpKINode Title="SendOrderCompleted event" Url="html/E_PayU_SDK_PayUService_SendOrderCompleted.htm" />
+  <HelpKINode Title="SendOrderStatus enumeration" Url="html/T_PayU_SDK_SendOrderStatus.htm" />
+  <HelpKINode Title="ServiceResponse(Of T) class">
+    <HelpKINode Title="ServiceResponse(T) Class" Url="html/T_PayU_SDK_ServiceResponse_1.htm" />
+    <HelpKINode Title="about ServiceResponse(Of T) class" Url="html/T_PayU_SDK_ServiceResponse_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PayU_SDK_ServiceResponse_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceResponse(Of T).Exception property" Url="html/P_PayU_SDK_ServiceResponse_1_Exception.htm" />
+  <HelpKINode Title="ServiceResponse(Of T).IsOk property" Url="html/P_PayU_SDK_ServiceResponse_1_IsOk.htm" />
+  <HelpKINode Title="ServiceResponse(Of T).Result property" Url="html/P_PayU_SDK_ServiceResponse_1_Result.htm" />
+  <HelpKINode Title="ServiceResponse&lt;T&gt; class">
+    <HelpKINode Title="ServiceResponse(T) Class" Url="html/T_PayU_SDK_ServiceResponse_1.htm" />
+    <HelpKINode Title="about ServiceResponse&lt;T&gt; class" Url="html/T_PayU_SDK_ServiceResponse_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PayU_SDK_ServiceResponse_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceResponse&lt;T&gt;.Exception property" Url="html/P_PayU_SDK_ServiceResponse_1_Exception.htm" />
+  <HelpKINode Title="ServiceResponse&lt;T&gt;.IsOk property" Url="html/P_PayU_SDK_ServiceResponse_1_IsOk.htm" />
+  <HelpKINode Title="ServiceResponse&lt;T&gt;.Result property" Url="html/P_PayU_SDK_ServiceResponse_1_Result.htm" />
+  <HelpKINode Title="Success enumeration member" Url="html/T_PayU_SDK_SendOrderStatus.htm" />
+  <HelpKINode Title="TokenString property" Url="html/P_PayU_SDK_Model_AccessToken_TokenString.htm" />
+  <HelpKINode Title="Value property" Url="html/P_PayU_SDK_Model_SecureString_Value.htm" />
+</HelpKI>
