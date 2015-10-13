@@ -596,8 +596,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="PayU.WP8.SDK, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PayTouch.1.3.1.0\lib\wp8\PayU.WP8.SDK.dll</HintPath>
+    <Reference Include="PayU.WP8.SDK, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PayTouch.1.3.2.0\lib\wp8\PayU.WP8.SDK.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WP7Contrib.View.Controls, Version=1.0.0.16, Culture=neutral, processorArchitecture=MSIL">
